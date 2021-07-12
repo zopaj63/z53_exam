@@ -1,0 +1,66 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  @keyframes freefall {
+    from {
+        transform: translateY(-400px);
+    }
+    to {
+        transform: translateY(0);
+        visibility: visible;
+    }
+  }
+  
+  body {
+    background: url(./media/board.jpg) center center/cover no-repeat fixed;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+
+  h1{
+    font-family: 'Patrick Hand', cursive;
+    font-size: 3rem;
+    color: aliceblue;
+    text-align: center;
+    text-shadow: 2px 2px 6px black;
+  }
+
+  p{
+      color: blanchedalmond;
+      font-weight: bold;
+      font-size: 1.1em;
+      text-align: center;
+      background-color:darkgreen;
+      padding: 9px;
+      border-radius: 14px;
+  }
+  
+  .main-container {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    align-items: center;
+    visibility: hidden;
+  }
+  
+  
+.item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    font-size: 20px;
+    margin: 20px;
+    animation: freefall 1s ease-out 0.5s 1 forwards;
+  }
