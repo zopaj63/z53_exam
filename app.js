@@ -22,12 +22,10 @@ var myfunc = setInterval(function () {
     // Poruka nakon odbrojavanja
     if (timeleft < 0) {
         clearInterval(myfunc);
-        document.querySelector("#days").innerHTML = ""
-        document.querySelector("#hours").innerHTML = ""
-        document.querySelector("#minutes").innerHTML = ""
-        document.querySelector("#seconds").innerHTML = ""
-        document.querySelector("#end").innerHTML = "EVO GA ISPIT!!";
+        document.querySelector("#days").innerHTML = "0"
+        document.querySelector("#hours").innerHTML = "0"
+        document.querySelector("#minutes").innerHTML = "0"
+        document.querySelector("#seconds").innerHTML = "0"
+        document.querySelector("#end").innerHTML = "I EVO GA ISPIT!!";
     }
 }, 1000);
-
-querySelector
